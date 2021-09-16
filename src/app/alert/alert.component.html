@@ -1,10 +1,14 @@
 <div class="alert alert-primary alert-dismissible fade show" role="alert">
     <div class="row">
-        <div class="col-md-6 order-md-2 mb-4 justify-content-center">
-            <h4 class="text-white ">Help Us Do More</h4>
+        <div class="col-md-6 order-md-2 mb-4 justify-content-center px-5 py-5">
+            <div class="col"></div>
+            <div class="col">
+                <h4 class="text-white ">Help Us Do More</h4>
             <p class="text-white">
-                We'll get right to the point: we're asking you to help support Khan Academy. We're a nonprofit that relies on support from people like you. <strong>If everyone reading this gives $12 montly, Khan Academy can continue to thrive for years.</strong> Please help keep Khan Academy free, for anyone, anywhere forever.
+                {{text}} <strong>{{strong1}}</strong> {{text1}}
             </p>
+            </div>
+            <div class="col"></div>
         </div>
         <div class="col-md-6 order-md-2 mb-4 justify-content-center">
             <ul class="list-group">
@@ -13,8 +17,8 @@
                 </p>
                 
                 <ul class="list-group list-group-horizontal">
-                    <button type="button" class="btn btn-outline-secondary">Monthly</button>
-                    <button type="button" class="btn btn-outline-secondary">One Time</button>
+                    <button type="button" class="btn btn-outline-light active" aria-pressed="true">Monthly</button>
+                    <button type="button" class="btn btn-outline-light">One Time</button>
                 </ul>
                 
                 <p class="text-white">
@@ -22,16 +26,16 @@
                 </p>
                 
                 <ul class="list-group list-group-horizontal">
-                    <button type="button" class="btn btn-outline-secondary">$12</button>
-                    <button type="button" class="btn btn-outline-secondary">$20</button>
-                    <button type="button" class="btn btn-outline-secondary">$30</button>
-                    <button type="button" class="btn btn-outline-secondary">$40</button>
-                    <button type="button" class="btn btn-outline-secondary">$50</button>
-                    <button type="button" class="btn btn-outline-secondary">Other</button>
+                    <button type="button" class="btn btn-outline-light">$12</button>
+                    <button type="button" class="btn btn-outline-light">$20</button>
+                    <button type="button" class="btn btn-outline-light">$30</button>
+                    <button type="button" class="btn btn-outline-light">$40</button>
+                    <button type="button" class="btn btn-outline-light">$50</button>
+                    <button type="button" class="btn btn-outline-light">Other</button>
                 </ul>
                 
-                <li class="list-group-item list-group-item primary">
-                    <input class="form-check-input me-1" type="checkbox" value="" color="primary">
+                <li class="list-group-item list-group-item alert-primary text-white">
+                    <input class="form-check-input me-1" type="checkbox" value="" >
                     Yes, I'll generously add $0.30 each month to cover the transaction fees so Khan Academy can keep 100% of my donation.
                 </li>
                 <div class="mb-3">
@@ -43,12 +47,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="d-grid gap-2">
                             <button type="button" class="btn btn-primary">Give by credit card</button>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="d-grid gap-2">
                             <button type="button" class="btn btn-primary">Give with PayPal</button>
                         </div>

@@ -5,7 +5,9 @@ import { AlertComponent } from './alert/alert.component';
 import { AppComponent } from './app.component';
 import { BottomNavBarComponent} from './footer/bottom-nav-bar.component';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
+import { LayoutComponent } from './layout/layout.component';
 import { PictureComponent } from './picture/picture.component';
+import { WordComponent } from './word/word.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { PictureComponent } from './picture/picture.component';
     TopNavBarComponent,
     BottomNavBarComponent,
     AlertComponent,
-    PictureComponent
+    PictureComponent,
+    LayoutComponent,
+    WordComponent
 
   ],
   imports: [
