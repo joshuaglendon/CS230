@@ -8,6 +8,14 @@ import { TopNavBarComponent } from './header/top-nav-bar.component';
 import { LayoutComponent } from './layout/layout.component';
 import { PictureComponent } from './picture/picture.component';
 import { WordComponent } from './word/word.component';
+import { DonateComponent } from './header/donate.component';
+import { LoginComponent } from './header/login.component';
+import { SignupComponent } from './header/signup.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -17,11 +25,17 @@ import { WordComponent } from './word/word.component';
     AlertComponent,
     PictureComponent,
     LayoutComponent,
-    WordComponent
+    WordComponent,
+    DonateComponent,
+    LoginComponent,
+    SignupComponent,
+    HomeComponent,
+  
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
