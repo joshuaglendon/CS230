@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CoursesScienceComponent } from './courses/courses-science.component';
 import { DonateComponent } from './header/donate.component';
 import { LoginComponent } from './header/login.component';
 import { SignupComponent } from './header/signup.component';
@@ -10,7 +11,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'home', component: HomeComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full'}
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: 'science', component: CoursesScienceComponent}
 ];
 
 @NgModule({

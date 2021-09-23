@@ -13,7 +13,8 @@ import { LoginComponent } from './header/login.component';
 import { SignupComponent } from './header/signup.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
-
+import { CoursesComponent } from './courses/courses.component';
+import { CoursesScienceComponent } from './courses/courses-science.component';
 
 
 
@@ -30,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     SignupComponent,
     HomeComponent,
-  
+    CoursesComponent,
+    CoursesScienceComponent
 
   ],
   imports: [
