@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesScienceComponent } from './courses/courses-science.component';
+import { ScienceCardComponent } from './courses/science-card.component';
 
 
 
@@ -32,7 +33,8 @@ import { CoursesScienceComponent } from './courses/courses-science.component';
     SignupComponent,
     HomeComponent,
     CoursesComponent,
-    CoursesScienceComponent
+    CoursesScienceComponent,
+    ScienceCardComponent
 
   ],
   imports: [
