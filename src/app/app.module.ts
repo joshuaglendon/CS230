@@ -16,7 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesScienceComponent } from './courses/courses-science.component';
 import { ScienceCardComponent } from './courses/science-card.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 
 @NgModule({
@@ -34,12 +35,14 @@ import { ScienceCardComponent } from './courses/science-card.component';
     HomeComponent,
     CoursesComponent,
     CoursesScienceComponent,
-    ScienceCardComponent
+    ScienceCardComponent,
+    UserInfoComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
