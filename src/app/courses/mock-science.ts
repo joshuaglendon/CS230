@@ -15,3 +15,4 @@ export const mock_science = [
         imagePath: "./assets/chemistry.png"
     }
 ]
+//add this to backend and can delete this file

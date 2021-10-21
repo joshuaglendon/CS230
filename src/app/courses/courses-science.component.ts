@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { mock_science } from './mock-science';
+import { ScienceService } from './courses-science.service';
 import { Science } from './science.model';
 
 @Component({
@@ -8,13 +8,19 @@ import { Science } from './science.model';
 })
 export class CoursesScienceComponent implements OnInit {
   sciences:Science[] = [];
-  constructor() { 
-    for (var science of mock_science) {
-      this.sciences.push(new Science(science));
-    }
+  
+  constructor(private scienceService: ScienceService) { 
+    
   }
 
   ngOnInit(): void {
+    this.scienceService.getCards().subscribe(data => {
+      console.log(data);
+      for(var item in data){
+        console.log(data[item]);
+        this.sciences.push(new Science(data[item]));
+      }
+    })
   }
-
+  
 }
