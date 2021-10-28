@@ -19,6 +19,10 @@ export class UserInfoComponent implements OnInit{
     ngOnInit(): void{
         console.log("Showing user info");
         this.showUserInfo();
+
+        // this.userInfoService.modifyUserInfo().subscribe(data => {
+        //     console.log(data);
+        // });
     }
 
     

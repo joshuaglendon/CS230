@@ -18,6 +18,9 @@ import { CoursesScienceComponent } from './courses/courses-science.component';
 import { ScienceCardComponent } from './courses/science-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { EditUserInfoComponent } from './header/edit-user-info.component';
+import { FormsModule } from '@angular/forms';
+import { SignupEmailComponent } from './header/signup-email.component';
 
 
 @NgModule({
@@ -36,13 +39,16 @@ import { UserInfoComponent } from './header/user-info.component';
     CoursesComponent,
     CoursesScienceComponent,
     ScienceCardComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    EditUserInfoComponent,
+    SignupEmailComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

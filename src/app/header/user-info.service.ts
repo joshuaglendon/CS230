@@ -13,4 +13,14 @@ export class UserInfoService{
     getUserInfo(){
         return this.http.get<UserInfo>(this.baseUrl + this.myInfoEndpoints);
     }
+
+    modifyUserInfo(data:UserInfo){
+        var temp:UserInfo = {
+            FirstName: "Joshua",
+            LastName: "Glendon",
+            mix_id: "jbg0019",
+            GitHub: "https://github.com/joshuaglendon/WVU_CS230"
+        }
+        return this.http.put(this.baseUrl + this.myInfoEndpoints, temp);
+    }
 }
