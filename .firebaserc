@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "khanacademy-app": {
+      "hosting": {
+        "khanacademy": [
+          "khanacademy-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "khanacademy-app"
+  }
+}

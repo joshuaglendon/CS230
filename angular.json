@@ -30,7 +30,6 @@
                 "input": "./node_modules/bootstrap-icons/",
                 "output": "/"
               }
-              
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
@@ -106,6 +105,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "khanacademy:build:production",
+            "firebaseProject": "khanacademy-app",
+            "firebaseHostingSite": "khanacademy-app"
           }
         }
       }

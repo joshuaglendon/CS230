@@ -21,6 +21,10 @@ import { UserInfoComponent } from './header/user-info.component';
 import { EditUserInfoComponent } from './header/edit-user-info.component';
 import { FormsModule } from '@angular/forms';
 import { SignupEmailComponent } from './header/signup-email.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
 
 
 @NgModule({
@@ -48,7 +52,10 @@ import { SignupEmailComponent } from './header/signup-email.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'khanacademy-app'),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]
