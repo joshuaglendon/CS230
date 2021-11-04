@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from '../home/database.service';
 import { ScienceService } from './courses-science.service';
 import { Science } from './science.model';
 
@@ -9,8 +10,8 @@ import { Science } from './science.model';
 export class CoursesScienceComponent implements OnInit {
   sciences:Science[] = [];
   
-  constructor(private scienceService: ScienceService) { 
-    
+  constructor(private scienceService: ScienceService, private dbService:DatabaseService) { 
+    dbService.showData();
   }
 
   ngOnInit(): void {
