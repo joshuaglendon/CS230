@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Science {\n  constructor({\n    title,\n    text,\n    imagePath\n  }) {\n    this.title = title;\n    this.text = text;\n    this.imagePath = imagePath;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
