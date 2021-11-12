@@ -1,0 +1,40 @@
+<div class="bg-primary py-5">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <div class="card-group">
+
+                <div class="card text-white bg-primary mb-3 px-5 py-5">
+                    <h2 class="card-title">A world class education for anyone, anywhere. 100% free.</h2>
+                    <p class="card-text"></p>
+                    <p class="card-text"></p>
+                    <p class="card-text">Join Khan Academy to get personalized help with what you’re studying or to
+                        learn something completely new. We’ll save all of your progress.</p>
+                    <p class="card-text"></p>
+                    <p class="card-text">By signing up for Khan Academy, you agree to our <a class="text-white"
+                            href="#">Terms of use</a> and <a class="text-white" href="#">Privacy Policy.</a></p>
+                </div>
+                <div class="card px-5 py-5">
+                    <form class="row g-3" #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+                        <div class="col-12">
+                            <label for="inputEmail" class="form-label">Your Email</label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="example@example.com" 
+                            ngModel name="email"
+                            required email>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputPassword4" class="form-label">Create a Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" 
+                            ngModel name="Password"
+                            required Password minlength="8">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary" [disabled] = "!authForm.valid">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
